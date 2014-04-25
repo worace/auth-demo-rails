@@ -11,4 +11,8 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'jquery-rails'
 gem 'coffee-rails'
 
+group :assets do
+  gem 'uglifier'
+end
+
 ruby "2.1.1"
