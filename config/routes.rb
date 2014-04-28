@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   scope :api do
     scope :v1 do
       resources :auth_tokens, :only => [:create], :controller => "api/v1/auth_tokens"
+      resources :users, :only => [:create], :controller => "api/v1/users"
       get "/users/me" => "api/v1/users#me"
     end
   end
